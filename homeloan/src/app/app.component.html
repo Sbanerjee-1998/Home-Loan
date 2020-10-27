@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./assets/pic1.png"style="padding-left: 20px;height: 50px;float:left"><h1>HOME LOAN</h1><br/>
+    </div>
+    <div class="topnav">
+      <a [routerLink]="['/homeLink']">Home</a>
+      <a [routerLink]="['/aboutus']">About Us</a>
+      <a [routerLink]="['/calculatorLink']">Calculator</a>
+      <a [routerLink]="['/applicationLink']">Application</a>
+      <a [routerLink]="['/loginLink']">Login</a>
+      <a [routerLink]="['/faqLink']">FAQ</a>
+      <img src="./assets/images/lti.jpg" style="padding: 20x;height: 70px; border-radius: 0px;">
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+      <p>©️ Home Loan Limited</p>
+    </div>
+  </body>
+
+</html>

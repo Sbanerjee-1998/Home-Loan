@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+.header{
+    padding: 10px;
+    text-align:left;
+	font-size:15px;
+	font-family: Arial;
+	color:white;
+    height:300px;
+	width:100%;
+	background-image: url('C:\Users\niloy\Web Development\AngularDemo\homeloan\src\assets\pic6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    margin: auto; /* horizontally center  10%left+40%center40%+10%right*/
+}
+
+.topnav{
+	
+    padding: 3x 10px;
+    overflow: hidden; /* visible,hidden,scroll auto*/
+    background-color: black;
+    width: 100%;
+    margin: auto;
+	
+}
+
+.topnav ul{
+    list-style-type: none;
+}
+
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding:10px;
+    text-decoration: none; 
+    letter-spacing: 5px;
+    height: 70px;
+}
+
+
+
+
+#carrossel {
+  height: 300px;
+}
+#carrossel {
+  position: absolute;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+#carrossel li {
+  display: inline-block;
+  height: 300px;
+  float: left;
+  position: relative;
+  width: 600px;
+}
+#carrossel ul {
+ position: absolute;
+ right: 0;
+ top: -15px; 
+ width: 9000px;
+ list-style: none;
+ margin-left: -39px;
+ 
+ transition: left 0.3s linear;
+}
+.carrossel-container {
+ margin: 0 auto;
+ padding: 0;
+ width: 600px;
+}
+.carrossel-container img {
+ width: 100%;
+ padding: 5 5px;
+}
+#carrossel ul {
+  animation: slide 15s infinite;
+}
+
+@keyframes slide{
+   20% { left: 0; }
+   25% { left: -600px; }
+   45% { left: -600px; }
+   50% { left: -1200px;}
+   70% { left: -1200px; }
+   75% { left: -1800px; }
+   98% { left: -1800px; }
+   100% { left: 0; }
+}
+
+
+.card{
+    background-color: white;
+    padding: 25px;
+    margin-top: 10px;
+	margin-left: 610px;
+	margin-right: -1px;
+	height:300px;
+	border: 10px grey;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+	text-align:left;
+	font-family: Algerian;
+	font-size: 18px;
+}
+
+
+.footer{
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+a:hover{
+	color: Green;
+}

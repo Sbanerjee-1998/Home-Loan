@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!--<link href = "regcss.css" rel = "stylesheet" type = "text/css" media="screen"/>
+    <script src="main.js"></script>-->
+    
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+	     <img src="./assets/pic1.png"style="padding-left: 20px;height: 50px;float:left"><h1>HOME LOAN</h1><br/>	 
+    </div>
+    <!--Row Bar-->
+    <div class="row">
+        <div class="main">
+            <div class="cards">
+                <form action="" #regForm="ngForm" method="GET" onsubmit="formSubmit()">
+                    <div class="container">
+                      <label for="fname"><b>FirstName</b></label>
+                      <input type="text" #firstname="ngModel" ngModel placeholder="Enter FirstName" name="fname" required>
+                      <div *ngIf="firstname.invalid && (firstname.dirty||firstname.touched)">
+                        <div *ngIf="firstname.errors.required" style="color:red">FirstName is Required</div>
+                      </div>
+                      <br/>
+                      <label for="lname"><b>LastName</b></label>
+                      <input type="text" #lastname="ngModel" ngModel placeholder="Enter LastName" name="lname" required>
+                      <div *ngIf="lastname.invalid && (lastname.dirty||lastname.touched)">
+                        <div *ngIf="lastname.errors.required" style="color:red">Lastname is Required</div>
+                      </div>
+                      <br/>
+                      <label for="email"><b>Email Address</b></label>
+                      <input type="email" #email="ngModel" ngModel pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" placeholder="Enter Email Address" name="email" required>
+                      <div *ngIf="email.invalid && (email.dirty||email.touched)">
+                        <div *ngIf="email.errors.required" style="color:red">Passowrd is Required</div>
+                        <div *ngIf="email.errors.pattern" style="color:red">invalid password</div>
+                       </div> 
+                      <br/>
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" #password="ngModel" ngModel pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onblur="validatePassword()" placeholder="Enter Password" id="psw" name="psw" required>
+                      <div *ngIf="password.invalid && (password.dirty||password.touched)">
+                        <div *ngIf="password.errors.required" style="color:red">Passowrd is Required</div>
+                        <div *ngIf="password.errors.pattern" style="color:red">invalid password</div>
+                       </div> 
+		                <br/>
+                      <label for="mobile"><b>Mobile No.</b></label>
+                      <input type="number" #mobile="ngModel" pattern="\d{10}" ngModel placeholder="Enter Mobile Number" id="mobile" required>
+                      <div *ngIf="mobile.invalid && (mobile.dirty||mobile.touched)">
+                        <div *ngIf="mobile.errors.required" style="color:red">Mobile number is Required</div>
+                        <div *ngIf="mobile.errors.pattern" style="color:red">invalid mobile</div>
+                      </div>
+                      <br/>
+                      <label for="dob"><b>Date Of Birth</b></label>
+                      <input type="date" #dob="ngModel" ngModel placeholder="Enter DateofBirth" name="dob" required>
+                      <div *ngIf="dob.invalid && (dob.dirty||dob.touched)">
+                        <div *ngIf="dob.errors.required" style="color:red">Date of Birth is Required</div>
+                       </div>
+                      <br/>
+                      <!--<button type="submit" onclick="validatePassword()">Register</button>-->
+                      <!--<input type="button" onclick="validatePassword()" value="Register">-->
+                      <!--<button type="button" onclick="validatePassword()">Register</button>-->
+                      <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>©️ Home Loan Limited</p>
+    </div>
+</body>
+</html>

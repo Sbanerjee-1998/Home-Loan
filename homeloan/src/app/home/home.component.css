@@ -1,11 +1,9 @@
 *{
     box-sizing: border-box;
 }
-body{
-    font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
-}
+body, html {
+    height: 100%;
+  }
 .header{
     padding: 10px;
     text-align:left;
@@ -102,18 +100,16 @@ body{
 
 
 .card{
-    background-color: white;
-    padding: 25px;
-    margin-top: 10px;
-	margin-left: 610px;
-	margin-right: -1px;
-	height:300px;
-	border: 10px grey;
-	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-	text-align:left;
-	font-family: Algerian;
-	font-size: 18px;
+    padding: 120px;
+	/* margin-top: 10px;*/
+	/*margin-left: 500px;
+	margin-right: 60px;*/
+	
+	height:800px;
+	padding-bottom:90px;
+	padding-top: 110px;
+	width: 80%;
+	float: right;
 }
 
 
@@ -128,4 +124,56 @@ body{
 
 a:hover{
 	color: Green;
+}
+.bg-image {
+    /* The image used */
+    background-image: url("C:\Users\niloy\git\Home-Loan\homeloan\src\assets\Home Buyer Rights.jpg");
+  
+    /* Add the blur effect */
+    /*filter: blur(8px);
+    -webkit-filter: blur(8px); */
+  
+    /* Full height */
+    height: 100%;
+    /*width: 100%;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    /*border: 5px solid #f1f1f1;*/
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    float:left;
+    
+    transform: translate(-50%, -50%);
+   /* z-index: 2;*/
+   width: 50%;
+    height:70%;
+    padding: 20px;
+    text-align: left;
+    font-size:20px;
+  font-family:Bahnschrift Condensed;
+  }
+  .img{
+	max-width:80px;
+	top: 55%;
+	right: 50%;
+}
+
+
+
+ul.content{
+font-size:35px;
+font-family:Bahnschrift Condensed;
+list-style-type:disc;
+text-align:left;
 }

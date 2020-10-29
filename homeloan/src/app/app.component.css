@@ -1,122 +1,148 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
-}
-.header{
-    padding: 10px;
-    text-align:left;
-	font-size:15px;
-	font-family: Arial;
-	color:white;
-    height:300px;
-	width:100%;
-	background-image: url('C:\Users\niloy\Web Development\AngularDemo\homeloan\src\assets\pic6.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    margin: auto; /* horizontally center  10%left+40%center40%+10%right*/
+body, html {
+  height: 100%;
 }
 
-.topnav{
-	
-    padding: 3x 10px;
-    overflow: hidden; /* visible,hidden,scroll auto*/
-    background-color: black;
-    width: 100%;
-    margin: auto;
-	
-}
-
-.topnav ul{
-    list-style-type: none;
-}
-
-.topnav a{
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding:10px;
-    text-decoration: none; 
-    letter-spacing: 5px;
-    height: 70px;
+* {
+  box-sizing: border-box;
 }
 
 
-
-
-#carrossel {
-  height: 300px;
-}
-#carrossel {
-  position: absolute;
-  width: 600px;
-  margin: auto;
+.navbar {
   overflow: hidden;
-  margin-top: 10px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  background-color: #333;
 }
-#carrossel li {
-  display: inline-block;
-  height: 300px;
+.navbar-right{
+	float:right;
+}
+
+.navbar a {
   float: left;
-  position: relative;
-  width: 600px;
-}
-#carrossel ul {
- position: absolute;
- right: 0;
- top: -15px; 
- width: 9000px;
- list-style: none;
- margin-left: -39px;
- 
- transition: left 0.3s linear;
-}
-.carrossel-container {
- margin: 0 auto;
- padding: 0;
- width: 600px;
-}
-.carrossel-container img {
- width: 100%;
- padding: 5 5px;
-}
-#carrossel ul {
-  animation: slide 15s infinite;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Bahnschrift Condensed;
 }
 
-@keyframes slide{
-   20% { left: 0; }
-   25% { left: -600px; }
-   45% { left: -600px; }
-   50% { left: -1200px;}
-   70% { left: -1200px; }
-   75% { left: -1800px; }
-   98% { left: -1800px; }
-   100% { left: 0; }
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+ color: Green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("/assets/pic13blur.jpg");
+
+  /* Add the blur effect */
+  /*filter: blur(8px);
+  -webkit-filter: blur(8px); */
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  /*border: 5px solid #f1f1f1;*/
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  float:left;
+  
+  transform: translate(-50%, -50%);
+ /* z-index: 2;*/
+ width: 50%;
+  height:70%;
+  padding: 20px;
+  text-align: left;
+  font-size:20px;
+font-family:Bahnschrift Condensed;
+}
+
+.img{
+	max-width:80px;
+	top: 55%;
+	right: 50%;
+}
+
+
+
+ul.content{
+font-size:35px;
+font-family:Bahnschrift Condensed;
+list-style-type:disc;
+text-align:left;
+}
 
 .card{
-    background-color: white;
-    padding: 25px;
-    margin-top: 10px;
-	margin-left: 610px;
-	margin-right: -1px;
-	height:300px;
-	border: 10px grey;
-	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-	text-align:left;
-	font-family: Algerian;
-	font-size: 18px;
+	
+	padding: 120px;
+	/* margin-top: 10px;*/
+	/*margin-left: 500px;
+	margin-right: 60px;*/
+	
+	height:800px;
+	padding-bottom:90px;
+	padding-top: 110px;
+	width: 80%;
+	float: right;
+	
 }
-
-
 .footer{
     padding: 10px;
     text-align: center;
@@ -126,6 +152,4 @@ body{
     margin: auto;
 }
 
-a:hover{
-	color: Green;
-}
+

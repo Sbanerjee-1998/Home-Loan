@@ -7,10 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
-import { CalculatorComponent } from './calculator/calculator.component';
 import { ApplicationComponent } from './application/application.component';
 import { FAQComponent } from './faq/faq.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { LoanTypesComponent } from './loan-types/loan-types.component';
+import { EmicalculatorComponent } from './emicalculator/emicalculator.component';
+import { EligibilitycalculatorComponent } from './eligibilitycalculator/eligibilitycalculator.component';
+import { LoanTrackerComponent } from './loan-tracker/loan-tracker.component';
+import { LearnComponent } from './learn/learn.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +22,14 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     HomeComponent,
     RegistrationComponent,
     LoginComponent,
-    CalculatorComponent,
     ApplicationComponent,
     FAQComponent,
-    AboutusComponent
+    AboutusComponent,
+    LoanTypesComponent,
+    EmicalculatorComponent,
+    EligibilitycalculatorComponent,
+    LoanTrackerComponent,
+    LearnComponent
   ],
   imports: [
     BrowserModule,

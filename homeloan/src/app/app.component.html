@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
+    <title>Home Page</title>
+    <!--<link href="loanmain.css" rel="stylesheet" type="text/css" media="screen" />-->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <div class="header">
-      <img src="./assets/pic1.png"style="padding-left: 20px;height: 50px;float:left"><h1>HOME LOAN</h1><br/>
-    </div>
-    <div class="topnav">
-      <a [routerLink]="['/homeLink']">Home</a>
-      <a [routerLink]="['/aboutus']">About Us</a>
-      <a [routerLink]="['/calculatorLink']">Calculator</a>
-      <a [routerLink]="['/applicationLink']">Application</a>
-      <a [routerLink]="['/loginLink']">Login</a>
-      <a [routerLink]="['/faqLink']">FAQ</a>
-      <img src="./assets/images/lti.jpg" style="padding: 20x;height: 70px; border-radius: 0px;">
+<body>
+    <div class="navbar">
+        <div class="navbar-right">
+
+            <a [routerLink]="['/homeLink']">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">About Us
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a [routerLink]="['/aboutusLink']">About Us</a>
+                    <a [routerLink]="['/loantypesLink']">Loan Types</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Calculator
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a [routerLink]="['/emicalculatorLink']">EMI Calculator</a>
+                    <a [routerLink]="['/eligibilitycalculatorLink']">Eligibility</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Application Form
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a [routerLink]="['/applicationLink']">Application Form</a>
+                    <a [routerLink]="['/loantrackerLink']">Loan Tracker</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">User Login
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Registration</a>
+                    <a [routerLink]="['/loginLink']">Login</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">FAQ
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a [routerLink]="['/faqLink']">FAQ</a>
+                    <a [routerLink]="['/learnLink']">Learn</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div>
-      <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
     </div>
-    <div class="footer">
-      <p>©️ Home Loan Limited</p>
-    </div>
-  </body>
+</body>
 
-</html>
+<!--Footer-->
+<!--<div class="footer">
+    <p>©️ Home Loan Limited</p>
+</div>-->

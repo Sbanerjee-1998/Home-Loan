@@ -1,1 +1,102 @@
-<p>application works!</p>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <div class="container">
+             <form id="Form1">
+                 <h3>Income Details</h3>
+                 <input type="text" name="plocation" placeholder="Property Location" required>
+                 <input type="text" name="pname" placeholder="Proerty Name" required>
+                 <input type="text" name="est_amount" placeholder="Estimated Amount" required>
+                 <input type="text" name="type_emp" placeholder="Type of Employment" required>
+                <input type="text" name="retire" placeholder="Retirement Age" required>
+                <input type="text" name="org_type" placeholder="Organizational Type" required>
+                <input type="text" name="emp_name" placeholder="Employer Name" required>
+                 <div class="btn-box">
+                     <button type="button" id="Next1">Next</button>
+                 </div>
+             </form>
+
+             <form id="Form2">
+                <h3>Loan Details</h3>
+                <input type="text" name="max_amount" placeholder="Max amount Grantable" required>
+                <input type="text" name="interest" placeholder="Interest Rate" required>
+                <input type="text" name="tenure" placeholder="Tenure" required>
+                <input type="text" name="loan_amount" placeholder="Loan Amount" required>
+                <div class="btn-box">
+                    <button type="button" id="Back1">Back</button>                    
+                </div>
+				 <div class="btn-box">
+                    <button type="button" id="Next2">Next</button>
+                 </div>
+            </form>
+              
+            <form id="Form3">
+                <h3>Personal Details</h3>
+                <input type="text" name="firstname" placeholder="Enter first name" required>
+                <input type="text" name="middlename" placeholder="Enter middle name" required>
+                <input type="text" name="lastname" placeholder="Enter last name" required>
+                <input type="password" name="pwd" placeholder="Enter Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <input type="password" name="pwd" placeholder="Confirm Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <input type="email" name="email" placeholder="Enter Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <!-- <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br> -->
+                <input type="type" name="gender" placeholder="Gender" required>
+                 <input type="text" name="nationality" placeholder="Enter nationality" required>
+                <input type="tel"  name="phone" placeholder="Enter mobile no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <input type="number" name="aadharno" placeholder="Enter aadhar number" required>
+                <input type="number" name="panno" placeholder="Enter pan number" required>
+                <input type="date"  name="dob" placeholder="Enter date of birth" required>  
+                
+               <div class="btn-box">
+                    <button type="button" id="Back2">Back</button>                    
+                </div>
+				 <div class="btn-box">
+                    <button type="button" id="Next3">Next</button>
+                 </div>
+            </form>
+
+            <form id="Form4">
+                <h3>Documents Upload</h3>
+                <label>Pan Card</label>
+                <input type="file" id="myFile" name="filename">
+                <label>Voter Id</label>
+                <input type="file" id="myFile" name="filename">
+                <label>Salary Slip</label>
+                <input type="file" id="myFile" name="filename">
+                <label>LOA</label>
+                <input type="file" id="myFile" name="filename">
+                <label>NOC from Builder</label>
+                <input type="file" id="myFile" name="filename">
+                <label>Aggrement To Sale</label>
+                <input type="file" id="myFile" name="filename">
+                
+                <div class="btn-box">
+                    <button type="button" id="Back3">Back</button>                    
+                </div>
+				 <div class="btn-box">
+                    <button type="submit">Submit</button>
+                 </div>
+				 
+				 <div class="btn-box">
+                    <button type="button" id="checklist">Generate CheckList</button>
+                 </div>
+            </form>
+
+
+            <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col"><small>Step 1</small></div>
+                <div class="step-col"><small>Step 2</small></div>
+                <div class="step-col"><small>Step 3</small></div>
+                <div class="step-col"><small>Step 4</small></div>
+            </div>
+        </div>
+
+  <script src="main1.js"></script>
+
+    </body>
+</html>

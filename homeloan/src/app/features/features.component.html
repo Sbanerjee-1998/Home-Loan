@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Tab content</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="btn-box">
+            <button id="btn1" onclick="openFeatures()">Features and Eligibility<i class="fa fa-sort-desc"
+                    aria-hidden="true"></i></button>
+            <button id="btn2" onclick="openInterest()">Interest and Rates<i class="fa fa-sort-desc"
+                    aria-hidden="true"></i></button>
+            <button id="btn3" onclick="openDocument()">Documents Required<i class="fa fa-sort-desc"
+                    aria-hidden="true"></i> </button>
+        </div>
+        <div id="content1" class="content">
+            <div class="content-left">
+                <H1>About features</H1>
+                <p>It is not just for the purchase of a new home that you can avail of a home loan.
+                    You can also take a loan for the purchase of a secondary house or a plot.
+                    You can also take a loan for repairs and refurbishing of your old home.
+                    Property prices have snowballed so much that majority of buyers have to avail of home loans to buy
+                    homes. </p>
+                <h1>Eligibility Criteria</h1>
+                <p> Resident Type: Resident Indian<br />
+                    Minimum Age: 18 years<br />
+                    Maximum Age: 70 years<br />
+                    Loan Tenure: up to 30 years. <br />
+                </p>
+                <a [routerLink]="['/applicationLink']">APPLY NOW</a>
+            </div>
+            <div class="content-right">
+                <img src="img1.png">
+            </div>
+        </div>
+        <div id="content2" class="content">
+            <div class="content-left">
+                <H1>About Interest and Rates</H1>
+                <p>Interest rate will vary as per the risk score of the customer
+                    ** Based on LTV of the Customer<br />
+                    Consolidated Processing Fee structure (including Advocate Fee and Valuer Fees) will be as
+                    under:<br />
+
+                    “0.40% of the loan amount plus applicable GST subject to a minimum of Rs 10000/- and maximum of Rs
+                    30000/- plus GST.<br />
+                    However, for builder tie up projects where individual TIR and Valuation Is not required: 0.40% of
+                    loan amount subject to max. recovery of Rs. 10000/- plus applicable tax.<br />
+                    And, if TIR and Valuation is required, then normal charge as mentioned above will be
+                    applicable.<br />
+
+                </p>
+                <a [routerLink]="['/applicationLink']">APPLY NOW</a>
+            </div>
+            <div class="content-right">
+                <img src="img3.jpg">
+            </div>
+        </div>
+        <div id="content3" class="content">
+            <div class="content-left">
+                <H1>About Documents Required</H1>
+                <p><u>List of papers/ documents applicable to all applicants:</u><br />
+
+                    -->Employer Identity Card<br />
+                    -->Loan Application: Completed loan application form duly filled in affixed with 3 Passport size
+                    photographs<br />
+                    -->Proof of Identity (Any one): PAN/ Passport/ Driver’s License/ Voter ID card<br />
+                    -->Proof of Residence/ Address (Any one): Recent copy of Telephone Bill/ Electricity Bill/Water
+                    Bill/ Piped Gas Bill or copy of Passport/ Driving License/ Aadhar Card<br /><br />
+                    <u>Account Statement:</u><br />
+
+                    -->Last 6 months Bank Account Statements for all Bank Accounts held by the applicant/s<br />
+                    -->If any previous loan from other Banks/Lenders, then Loan A/C statement for last 1 year<br /> </p>
+                <a [routerLink]="['/applicationLink']">APPLY NOW</a>
+            </div>
+            <div class="content-right">
+                <img src="img5.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

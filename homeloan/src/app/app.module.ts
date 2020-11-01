@@ -15,6 +15,7 @@ import { EmicalculatorComponent } from './emicalculator/emicalculator.component'
 import { EligibilitycalculatorComponent } from './eligibilitycalculator/eligibilitycalculator.component';
 import { LoanTrackerComponent } from './loan-tracker/loan-tracker.component';
 import { LearnComponent } from './learn/learn.component';
+import { FeaturesComponent } from './features/features.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LearnComponent } from './learn/learn.component';
     EmicalculatorComponent,
     EligibilitycalculatorComponent,
     LoanTrackerComponent,
-    LearnComponent
+    LearnComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,

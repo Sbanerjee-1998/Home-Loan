@@ -10,62 +10,43 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-right">
+    <div class="wrapper">
+    <ul>
+        <li><a href="#">FAQ</a>
+         <ul>
+          <li><a [routerLink]="['/faqLink']">FAQ</a></li>
+          <li><a [routerLink]="['/learnLink']">Learn</a></li>
+         </ul>
+        </li>
+        <li><a [routerLink]="['/loginLink']">Login</a>
+         </li>
+        <li><a href="#">About Us</a>
+         <ul>
+          <li><a [routerLink]="['/aboutusLink']">About Us</a></li>
+          <li><a [routerLink]="['/loantypesLink']">Loan types</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Calculator</a>
+         <ul>
+          <li><a [routerLink]="['/emicalculatorLink']">EMI Calculator</a></li>
+          <li><a [routerLink]="['/eligibilitycalculatorLink']">Eligibility</a></li>
+         </ul>
+        </li>
+        <li><a href="#">Application</a>
+         <ul>
+          <li><a [routerLink]="['/featuresLink']">Application Form</a></li>
+          <li><a [routerLink]="['/loantrackerLink']">Loan Tracker</a></li>
+         </ul>
+        </li>
+        <li><a [routerLink]="['/homeLink']">Home</a></li>
+       </ul>
+       
+       </div>
 
-            <a [routerLink]="['/homeLink']">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">About Us
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a [routerLink]="['/aboutusLink']">About Us</a>
-                    <a [routerLink]="['/loantypesLink']">Loan Types</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Calculator
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a [routerLink]="['/emicalculatorLink']">EMI Calculator</a>
-                    <a [routerLink]="['/eligibilitycalculatorLink']">Eligibility</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Application Form
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a [routerLink]="['/applicationLink']">Application Form</a>
-                    <a [routerLink]="['/loantrackerLink']">Loan Tracker</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">User Login
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Registration</a>
-                    <a [routerLink]="['/loginLink']">Login</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">FAQ
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a [routerLink]="['/faqLink']">FAQ</a>
-                    <a [routerLink]="['/learnLink']">Learn</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <div>
         <router-outlet></router-outlet>
     </div>
+    
 </body>
 
 <!--Footer-->

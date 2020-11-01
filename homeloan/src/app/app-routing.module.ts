@@ -11,6 +11,7 @@ import { LearnComponent} from './learn/learn.component';
 import { ApplicationComponent} from './application/application.component';
 import { FAQComponent} from './faq/faq.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { FeaturesComponent } from './features/features.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'homeLink',component:HomeComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path:'registrationLink',component:RegistrationComponent},
   {path:'loginLink',component:LoginComponent},
   {path:'faqLink',component:FAQComponent},
-  {path:'learnLink',component:LearnComponent}
+  {path:'learnLink',component:LearnComponent},
+  {path:'featuresLink',component:FeaturesComponent}
   
 ];
 

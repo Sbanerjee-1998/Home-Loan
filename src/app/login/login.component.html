@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<link rel="stylesheet" href="login.css">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login Form Using HTML And CSS Only</title>
+</head>
+<body>
+	<div class="container" id="container">
+		
+		
+		<div class="form-container log-in-container">
+			<form #loginForm='ngForm'>
+				<h1>Login</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa fa-google fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+                <input type="email" #email="ngModel" [(ngModel)]="user.email" name="email" placeholder="Email" required/>
+                <div *ngIf="email.invalid && (email.dirty||email.touched)">
+                    <div *ngIf="email.errors.required" style="color:red">Username is Required</div>
+                  </div>
+				<input type="password" #password="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" [(ngModel)]="user.psw" name="psw" required/>
+                <div *ngIf="password.invalid && (password.dirty||password.touched)">
+                    <div *ngIf="password.errors.required" style="color:red">Password is Required</div>
+                    <div *ngIf="password.errors.pattern" style="color:red">invalid password</div>
+                </div>
+                <a href="#">Forgot your password?</a>
+				<button>Log In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>DON'T HAVE AN ACCOUNT?</h1>
+					<br><br>
+					<button (click)="btnClick()">REGISTER</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

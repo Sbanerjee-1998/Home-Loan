@@ -16,6 +16,7 @@ import { EligibilitycalculatorComponent } from './eligibilitycalculator/eligibil
 import { LoanTrackerComponent } from './loan-tracker/loan-tracker.component';
 import { LearnComponent } from './learn/learn.component';
 import { FeaturesComponent } from './features/features.component';
+import { Ng5SliderModule } from 'ng5-slider';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FeaturesComponent } from './features/features.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    Ng5SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

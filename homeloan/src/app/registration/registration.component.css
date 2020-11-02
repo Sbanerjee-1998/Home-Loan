@@ -1,4 +1,4 @@
-input[type=text], input[type=password], input[type=email], input[type=number]{
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=date]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -13,13 +13,14 @@ input[type=text], input[type=password], input[type=email], input[type=number]{
     margin: auto;
 }
 .cards{
-    background-color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     padding: 20px;
     margin-top: 20px;
     overflow: hidden;
+    transform: translate(5%,20%);
 }
 .main{
-    width: 80%;
+    width: 50%;
     margin: auto;
 }
 /*.header{

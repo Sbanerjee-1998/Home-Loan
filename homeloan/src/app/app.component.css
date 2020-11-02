@@ -1,8 +1,13 @@
 
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
-  background-image: url('C:/Users/niloy/git/Home-Loan/homeloan/src/assets/pic4.jpg');
+  background: url('C:/Users/niloy/git/Home-Loan/homeloan/src/assets/pic4.jpg') no-repeat fixed center;
 	background-size: cover;
 	height: 100vh;
+	margin: -10px;
 }
 ul {
  margin: 0px;
@@ -39,10 +44,10 @@ ul li ul li{
 ul li:hover ul li {
  display: block;
 }
-.wrapper .center{
-	position: absolute;
-	left: 50%;
-	top: 55%;
+.wrapper {
+	position: fixed;
+	right: -450px;
+	top: 20px;
 	transform: translate(-50%, -50%);
 	font-family: sans-serif;
 	user-select: none;

@@ -1,4 +1,8 @@
 
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
 	background-image: url('C:/Users/niloy/git/Home-Loan/homeloan/src/assets/pic12blur.jpg') no-repeat center fixed;
 	background-size: cover;

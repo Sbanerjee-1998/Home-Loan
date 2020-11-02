@@ -8,23 +8,27 @@ ul{
   padding-left: 40px;
 }
 .card{
-    padding: 120px;
-    height:500px;
-	padding-bottom:90px;
-	padding-top: 110px;
-	width: 80%;
+    padding: 30px;
+    /* height:500px; */
+	/* padding-bottom:90px;
+    padding-top: 110px; */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+    margin-top: 30px;
+    margin-left: 400px;
+	width: 600px;
     float: left;
     color : white;
 }
 body{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/pic4.jpg");
-	display: flex;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/pic4.jpg") no-repeat fixed center;
+    background-size: cover;
+    /* display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	flex-direction: column; */
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
-	margin: -20px 0 50px;
+	margin: -55px 0 50px;
 }
 .heading {
     margin-left: -920px;
@@ -34,8 +38,8 @@ body{
     font-weight: bold;
   }
   .about_us {
-    margin-left: -1080px;
-    margin-top: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
     color: white;
     font-size: 25px;
     font-weight: bold;

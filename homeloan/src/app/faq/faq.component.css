@@ -5,13 +5,15 @@
 .faqs{
     padding: 30px 25px;
   text-align: left;
-  margin-top: 200px;
+  /* margin-top: 350px; */
   margin-left: 350px;
+background-color: red;
   border-radius: 5px;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
   color: white;
   line-height: 30px;
   width: 750px;
+  transform: translate(5%,60%);
 }
 summary:focus{
     background-color: whitesmoke;
@@ -26,8 +28,16 @@ summary:focus{
     margin-top: 8px;
 }
 body{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/pic4.jpg") no-repeat center fixed;
+    /* background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/pic4.jpg") no-repeat center fixed;
 	background-size: cover;
-	font-family: 'Montserrat', sans-serif;
-	height: 50vh;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;;
+	height: 100vh; */
+}
+.heading{
+    margin-left: 80px;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
 }
